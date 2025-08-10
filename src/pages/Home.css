@@ -108,6 +108,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  justify-content: center;
   text-align: left;
   font-size: 1rem;
 }
@@ -124,29 +125,56 @@ img {
 .list-sec {
 }
 
-.spanish-list {
-  list-style-type: "🇪🇸";
-}
-
-.english-list {
-  list-style-type: "🇺🇸";
-}
-
-.french-list {
-  color: #3d74b6;
-  list-style-type: "🇫🇷";
-}
-
-.english-list,
-.spanish-list,
-.french-list {
+.language-list {
   color: #0b1d51;
   font-weight: 480;
   font-family: "Edu NSW ACT Cursive", cursive;
   font-optical-sizing: auto;
+  list-style-type: none;
 }
 /* {
   list-style-type: none;
   display: flex;
   /* flex-direction: column; */
 /* } */
+
+@media screen and (max-width: 800px) {
+  .prac-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  img {
+    max-width: 35%;
+    height: auto;
+    /* display: block; avoids inline gaps */
+  }
+
+  /* .section3,
+  .list-sec,
+  .lists, */
+  .section3 .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prac-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /* .section3,
+  .list-sec,
+  .lists, */
+  .section3 .lists {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}

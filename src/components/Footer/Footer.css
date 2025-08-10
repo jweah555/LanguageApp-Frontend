@@ -5,6 +5,21 @@ footer {
   align-items: center;
 }
 
+.footer-img {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.girlReading,
+.reading,
+.relaxing {
+  width: 25%;
+  max-width: 100%;
+}
+
 .right-left-container {
   display: flex;
   justify-content: space-around;
@@ -104,15 +119,15 @@ form div {
 }
 
 footer img {
-  max-width: 10%;
+  max-width: 12%;
 }
 
 .footer-img {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .girlReading,
@@ -120,4 +135,28 @@ footer img {
 .relaxing {
   width: 25%;
   max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .email-message {
+    flex-direction: column;
+  }
+
+  .right-left-container {
+    /* margin-left: 3rem; */
+    padding-right: 2.5rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .email-message {
+    flex-direction: column;
+  }
+
+  .right-left-container {
+    /* margin-left: 5rem; */
+    margin-right: 3rem;
+    padding-left: 2rem;
+  }
 }
