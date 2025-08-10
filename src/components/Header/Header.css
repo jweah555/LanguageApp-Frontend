@@ -1,0 +1,81 @@
+*,
+*::befor,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  font-family: "Roboto Flex", sans-serif;
+  width: 100;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.5rem 2rem 0 2em;
+  background-color: #fbfbfb;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+}
+
+ul {
+  /* list-style-type: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .main-option {
+  gap: 3rem;
+}
+
+.main-option > li:hover {
+  background-color: #ffd700;
+  border-radius: 1rem;
+  padding: 0.5rem;
+} */
+
+.main-option > li {
+  gap: 3rem;
+  padding: 0.5rem; /* fixed */
+  transition: background-color 0.2s ease, border-radius 0.2s ease,
+    transform 0.2s ease;
+}
+
+.main-option > li:hover {
+  background-color: #ffd700;
+  border-radius: 1rem;
+  transform: scale(1.05); /* slightly enlarges visually */
+}
+
+.login {
+  padding: 0.5rem; /* fixed */
+  transition: background-color 0.2s ease, border-radius 0.2s ease,
+    transform 0.2s ease;
+  list-style-type: none;
+}
+
+.login:hover {
+  background-color: #ffd700;
+  border-radius: 1rem;
+  transform: scale(1.05);
+}
+
+.getStarted {
+  background-color: black;
+  color: white;
+  padding: 0.65rem;
+  border-radius: 8px;
+  list-style-type: none;
+
+  transition: background-color 0.2s ease, border-radius 0.2s ease;
+}
+
+.getStarted:hover {
+  background-color: #ffd700;
+  color: black;
+  /* border-style: solid; */
+  transform: scale(1.05);
+}
