@@ -1,6 +1,10 @@
 import "../Header/Header.css";
+// import hamIcon from "../../assets/images/hamburgerIcon.png";
+import { useState } from "react";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header>
       <div>
@@ -30,7 +34,28 @@ function Header() {
             Deci
           </text>
         </svg>
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {/* <img
+            // className="ham-Icon"
+            src={hamIcon}
+          /> */}
+          Menu
+        </button>
       </div>
+
+      {isOpen && (
+        <nav className="sub-nav">
+          <ul>
+            <li>Explore</li>
+            <li>Create</li>
+            <li>Decks</li>
+            <li>Profile</li>
+            <li>Login</li>
+            <li>Get Started</li>
+          </ul>
+        </nav>
+      )}
+
       <ul className="main-option">
         <li>Explore</li>
         <li>Create</li>

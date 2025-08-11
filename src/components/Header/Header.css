@@ -79,3 +79,95 @@ ul {
   /* border-style: solid; */
   transform: scale(1.05);
 }
+
+.ham-Icon {
+  display: none;
+}
+
+.sub-nav {
+  display: none;
+}
+
+.ham {
+  display: none;
+}
+
+header button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main-option,
+  .login,
+  .getStarted {
+    display: none;
+    /* visibility: hidden; */
+  }
+
+  .ham {
+    display: block;
+    height: 3rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 1.1rem;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Delius", cursive;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  /* .ham-Icon {
+    display: block;
+    height: 3rem;
+   
+  } */
+
+  /* header ul {
+    display: none;
+  } */
+
+  header button {
+    display: block;
+    height: 2.2rem;
+    width: 5rem;
+    border-radius: 8px;
+    border-width: 1px;
+    background-color: #77bef0;
+    z-index: 10;
+  }
+
+  header button:hover {
+    background-color: #ffcb61;
+  }
+
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  header > ul:last-of-type {
+    display: none;
+  }
+  /* 
+  header > ul {
+    display: none;
+  } */
+}
