@@ -3,6 +3,7 @@ import heartGif from "../assets/images/heart.gif";
 
 import { StudySelect } from "../data/studySelect";
 import { FunFacts } from "../data/funFacts";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
