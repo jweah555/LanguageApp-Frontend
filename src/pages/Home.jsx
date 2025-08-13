@@ -17,23 +17,25 @@ function Home() {
           Repetition that adapts to your learning
         </span>
       </section>
-      <secetion className="section2">
+      <section className="section2">
         <h2>Select Catagory</h2>
         <span>✌️ 🇪🇸 🇺🇸 🇫🇷 👍</span>
-      </secetion>
+      </section>
       <section className="prac-options">
         {StudySelect.map((item) => (
-          <div className="language-option">
-            <img src={item.image} />
-            {item.text}
-          </div>
+          <Link key={item.id} to={item.pageLink}>
+            <div className="language-option">
+              <img className="select-cards" src={item.image} />
+              {item.text}
+            </div>
+          </Link>
         ))}
       </section>
       <section className="section3">
         <h2>Fun Facts</h2>
         <div className="lists">
           {FunFacts.map((facts) => (
-            <div className="list-sec">
+            <div key={facts.id} className="list-sec">
               <ul className="language-list">
                 <h3 style={{ color: "#FF6868" }}>{facts.title}</h3>
                 <li>{facts.fact1}</li>

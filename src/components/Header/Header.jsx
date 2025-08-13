@@ -2,9 +2,11 @@ import "../Header/Header.css";
 // import hamIcon from "../../assets/images/hamburgerIcon.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  // const isLoginSignUpPage = location.pathname ==
 
   return (
     <header>
@@ -57,8 +59,12 @@ function Header() {
             </Link>
 
             <li>Profile</li>
-            <li>Login</li>
-            <li>Get Started</li>
+            <Link to="/loginSignUp">
+              <li>Login</li>
+            </Link>
+            <Link to="/loginSignUp">
+              <li>Get Started</li>
+            </Link>
           </ul>
         </nav>
       )}
@@ -73,8 +79,12 @@ function Header() {
         <li>Profile</li>
       </ul>
       <ul>
-        <li className="login">Login</li>
-        <li className="getStarted">Get Started</li>
+        <Link to="/loginSignUp">
+          <li className="login">Login</li>
+        </Link>
+        <Link to="/loginSignUp">
+          <li className="getStarted">Get Started</li>
+        </Link>
       </ul>
     </header>
   );

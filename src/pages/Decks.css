@@ -84,3 +84,9 @@
 /* img {
   display: none;
 } */
+
+@media screen and (max-width: 475) {
+  .deck-main {
+    height: 50vh;
+  }
+}

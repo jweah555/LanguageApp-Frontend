@@ -68,7 +68,7 @@ body {
   width: 10rem;
 } */
 
-img {
+.select-cards {
   max-width: 50%;
   height: auto;
   /* display: block; avoids inline gaps */
@@ -145,7 +145,7 @@ img {
     grid-template-rows: 1fr 1fr;
   }
 
-  img {
+  .select-cards {
     max-width: 35%;
     height: auto;
     /* display: block; avoids inline gaps */

@@ -8,6 +8,10 @@ import Home from "./pages/Home.jsx";
 import DeckPage from "./pages/Decks.jsx";
 import ErrorPage from "./pages/Error.jsx";
 import Layout from "./components/Layout/Layout.jsx";
+import DeckSelection from "./pages/DeckSelection.jsx";
+import Translate from "./pages/Translate.jsx";
+import LoginSignUp from "./pages/LoginSignUp.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +19,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "deckpage", element: <DeckPage /> },
+      { path: "deckSelection", element: <DeckSelection /> },
+      { path: "translate", element: <Translate /> },
+      { path: "loginSignUp", element: <LoginSignUp /> },
     ],
   },
 ]);
