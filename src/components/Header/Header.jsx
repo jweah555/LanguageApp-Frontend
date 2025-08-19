@@ -2,7 +2,7 @@ import "../Header/Header.css";
 // import hamIcon from "../../assets/images/hamburgerIcon.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,8 +52,14 @@ function Header() {
       {isOpen && (
         <nav className="sub-nav">
           <ul>
-            <li>Explore</li>
-            <li>Create</li>
+            <Link to="/createCard">
+              <li>Card</li>
+            </Link>
+
+            <Link to="/createDeck">
+              <li>Create</li>
+            </Link>
+
             <Link to="/deckpage">
               <li>Decks</li>
             </Link>
@@ -70,8 +76,13 @@ function Header() {
       )}
 
       <ul className="main-option">
-        <li>Explore</li>
-        <li>Create</li>
+        <Link to="/createCard">
+          <li>Card</li>
+        </Link>
+        <Link to="/createDeck">
+          <li>Create</li>
+        </Link>
+
         <Link to="/deckpage">
           <li>Decks</li>
         </Link>

@@ -11,6 +11,9 @@ import Layout from "./components/Layout/Layout.jsx";
 import DeckSelection from "./pages/DeckSelection.jsx";
 import Translate from "./pages/Translate.jsx";
 import LoginSignUp from "./pages/LoginSignUp.jsx";
+import CreateDeck from "./pages/CreateDeck.jsx";
+import CreateCard from "./pages/CreateCard.jsx";
+import UserDeck from "./pages/UserDeck.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,9 @@ const router = createBrowserRouter([
       { path: "deckSelection", element: <DeckSelection /> },
       { path: "translate", element: <Translate /> },
       { path: "loginSignUp", element: <LoginSignUp /> },
+      { path: "createDeck", element: <CreateDeck /> },
+      { path: "createCard", element: <CreateCard /> },
+      { path: "userDeck", element: <UserDeck /> },
     ],
   },
 ]);

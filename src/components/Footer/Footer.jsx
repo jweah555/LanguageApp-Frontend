@@ -14,6 +14,10 @@ function Footer() {
   const isDeckPage = location.pathname === "/deckpage";
   const isTranslatePage = location.pathname === "/translate";
   const isLoginSignUpPage = location.pathname === "/loginSignUp";
+  const isCreatePage = location.pathname === "/createDeck";
+  const isCreateCardPage = location.pathname === "/createCard";
+  const isUserDeck = location.pathname === "/userDeck";
+
   return (
     <footer>
       {!isLoginSignUpPage && (
@@ -24,7 +28,10 @@ function Footer() {
         </div>
       )}
 
-      {!isLoginSignUpPage &&
+      {!isUserDeck &&
+        !isCreateCardPage &&
+        !isCreatePage &&
+        !isLoginSignUpPage &&
         !isDeckPage &&
         !isTranslatePage &&
         !isDeckSelectionPage && (

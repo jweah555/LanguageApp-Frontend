@@ -1,11 +1,11 @@
-import "../pages/DeckSelection.css";
+import "../pages/UserDeck.css";
 import { deckInfo } from "../data/deckInfo";
 import { Link } from "react-router-dom";
 
-function DeckSelection() {
+function UserDeck() {
   return (
     <main className="card-page-main">
-      <h1>Select the Deck of your Choice</h1>
+      <h1>Your Decks</h1>
 
       <div className="deck-card-container">
         {deckInfo.map((deck) => (
@@ -17,7 +17,7 @@ function DeckSelection() {
             </p>
             <hr />
             <div className="card-bottom">
-              <Link to="/userDeck">
+              <Link to={deck.link}>
                 <button className="card-button">Add</button>
               </Link>
               <span>{deck.status}</span>
@@ -29,4 +29,4 @@ function DeckSelection() {
   );
 }
 
-export default DeckSelection;
+export default UserDeck;
