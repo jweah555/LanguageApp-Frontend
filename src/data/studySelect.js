@@ -8,7 +8,7 @@ export const StudySelect = [
     id: 1,
     image: repeat,
     text: "Spaced Rep Deck",
-    pageLink: "spaceRep",
+    pageLink: "/deckSelection",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const StudySelect = [
   {
     id: 4,
     image: grammer,
-    text: "Grammer Practice",
-    pageLink: "grammer",
+    text: "Create Deck",
+    pageLink: "/createDeck",
   },
 ];

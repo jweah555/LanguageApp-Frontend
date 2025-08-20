@@ -86,8 +86,9 @@ function Header() {
         <Link to="/deckpage">
           <li>Decks</li>
         </Link>
-
-        <li>Profile</li>
+        <Link to="/profile">
+          <li>Profile</li>
+        </Link>
       </ul>
       <ul>
         <Link to="/loginSignUp">

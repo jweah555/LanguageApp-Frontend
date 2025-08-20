@@ -14,6 +14,7 @@ import LoginSignUp from "./pages/LoginSignUp.jsx";
 import CreateDeck from "./pages/CreateDeck.jsx";
 import CreateCard from "./pages/CreateCard.jsx";
 import UserDeck from "./pages/UserDeck.jsx";
+import Profile from "./pages/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: "createDeck", element: <CreateDeck /> },
       { path: "createCard", element: <CreateCard /> },
       { path: "userDeck", element: <UserDeck /> },
+      { path: "profile", element: <Profile /> },
     ],
   },
 ]);

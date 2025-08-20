@@ -17,6 +17,7 @@ function Footer() {
   const isCreatePage = location.pathname === "/createDeck";
   const isCreateCardPage = location.pathname === "/createCard";
   const isUserDeck = location.pathname === "/userDeck";
+  const isProfilePage = location.pathname === "/profile";
 
   return (
     <footer>
@@ -28,7 +29,8 @@ function Footer() {
         </div>
       )}
 
-      {!isUserDeck &&
+      {!isProfilePage &&
+        !isUserDeck &&
         !isCreateCardPage &&
         !isCreatePage &&
         !isLoginSignUpPage &&
